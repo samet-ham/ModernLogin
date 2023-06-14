@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ModernLogin.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="LightGrey">
+
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout>
+                <Image
+                    Margin="0,50,0,0"
+                    Source="locksolid.svg"
+                    VerticalOptions="Start"
+                    WidthRequest="100" />
+
+                <Label
+                    Margin="0,25,0,0"
+                    FontSize="16"
+                    HorizontalOptions="Center"
+                    Text="Welcome to back you've been missed!"
+                    TextColor="Grey" />
+
+                <Frame
+                    Margin="25,25,25,0"
+                    BackgroundColor="White"
+                    BorderColor="White">
+                    <Entry
+                        FontSize="16"
+                        Placeholder="Username"
+                        TextColor="Gray" />
+                </Frame>
+
+                <Frame
+                    Margin="25,10,25,0"
+                    BackgroundColor="White"
+                    BorderColor="White">
+                    <Entry
+                        FontSize="16"
+                        IsPassword="True"
+                        Placeholder="Password"
+                        TextColor="Gray" />
+                </Frame>
+
+                <Label
+                    Margin="0,10,25,0"
+                    HorizontalOptions="End"
+                    Text="Forgot Password?" />
+
+                <Button
+                    Margin="25,25,25,0"
+                    Padding="25"
+                    BackgroundColor="Black"
+                    BorderColor="Black"
+                    CornerRadius="8"
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    Text="Sign In"
+                    TextColor="White" />
+
+                <Grid Margin="25,50,25,0" ColumnDefinitions="*,auto,*">
+                    <Grid Grid.Column="0">
+                        <StackLayout BackgroundColor="Grey" HeightRequest="1" />
+                    </Grid>
+                    <Grid Grid.Column="1" Margin="10,0,10,0">
+                        <Label Text="Or continue width" TextColor="Gray" />
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <StackLayout BackgroundColor="Grey" HeightRequest="1" />
+                    </Grid>
+                </Grid>
+
+                <Grid Margin="25,25,25,0" ColumnDefinitions="*,*">
+                    <ImageButton
+                        Grid.Column="0"
+                        Padding="15"
+                        BackgroundColor="White"
+                        CornerRadius="16"
+                        HeightRequest="100"
+                        HorizontalOptions="End"
+                        Source="google"
+                        WidthRequest="100" />
+
+                    <ImageButton
+                        Grid.Column="1"
+                        Padding="15"
+                        BackgroundColor="White"
+                        CornerRadius="16"
+                        HeightRequest="100"
+                        HorizontalOptions="Start"
+                        Source="apple"
+                        WidthRequest="100" />
+                </Grid>
+
+                <HorizontalStackLayout Margin="0,20,0,0" HorizontalOptions="Center">
+                    <Label Text="Not a member? " />
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Register now"
+                        TextColor="Blue" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
