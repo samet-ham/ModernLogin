@@ -8,6 +8,7 @@
     <Grid>
         <ScrollView>
             <VerticalStackLayout>
+
                 <Image
                     Margin="0,50,0,0"
                     Source="locksolid.svg"
