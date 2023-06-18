@@ -13,7 +13,7 @@ A modern member login page with .Net MAUI
   
 ## Screenshots
 <div style="width: 60%; height: 60%">
-  <img src="https://www.hostkod.com/github-images/Screenshot_1686828033.png" alt="Screenshot" style="width: 350px">
+  <img src="https://www.hostkod.com/github-images/Screenshot_MauiLogin.png" alt="Screenshot" style="width: 350px">
 </div>
 
   
